@@ -35,7 +35,10 @@ export default function GameBoard() {
       </div>
       <div>
         <Link to="/">
-          <button className="settings shadow">
+          <button
+            onClick={() => dispatch({ type: "RESET" })}
+            className="settings shadow"
+          >
             <img src="/assets/set.png" alt="Settings" />
           </button>
         </Link>

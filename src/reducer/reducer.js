@@ -1,7 +1,18 @@
 import checkWinner from "../utils/checkWinner";
 
+let initialState = {
+    currentTurn: 2,
+    squares: Array(9).fill(0),
+    winner: null,
+    playerOne: { move: 1, name: "Player1", wins: 0 },
+    playerTwo: { move: 2, name: "Player2", wins: 0 },
+  };
+  
 export const reducer = (state, { type, payload }) => {
   switch (type) {
+    case "RESET": {
+      return initialState;
+    }
     case "UPDATE_SQUARE":
       let newSquares = [...state.squares];
       newSquares[payload.index] = payload.currentValue;
