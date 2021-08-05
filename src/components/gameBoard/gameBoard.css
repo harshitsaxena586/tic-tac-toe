@@ -1,0 +1,37 @@
+.gameBoardWrap {
+  min-height: 100vh;
+}
+
+.board {
+  margin: auto;
+  background: #f6f8f7;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  max-width: 31rem;
+  max-height: 31rem;
+  border-radius: 16px;
+}
+.settings {
+  display: flex;
+  margin: 20px auto;
+  padding: 5px;
+  border-radius: 500px;
+  background-color: #fff;
+  border: none;
+}
+
+.settings img {
+  max-width: 50px;
+  height: auto;
+}
+@media screen and (max-width: 768px) {
+  .board {
+    margin: 60px auto;
+    max-width: 300px;
+    max-height: 300px;
+    padding: 10px 6px;
+  }
+}

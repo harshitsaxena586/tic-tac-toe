@@ -1,0 +1,64 @@
+.pickSide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f5f7f6;
+  min-height: 100vh;
+}
+
+.pickSide h1 {
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.pickSide input {
+  display: block;
+  margin: auto;
+  padding: 0;
+  font-size: 100px;
+}
+input[type="radio"] {
+  color: #3b7df8;
+  border: 0px;
+  width: 100%;
+  height: 0.5em;
+}
+.continue {
+  font-weight: 500;
+  color: rgb(37, 37, 37);
+  margin: 5px auto;
+  font-size: 2.5rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #fff;
+  display: block;
+  font-size: 1rem;
+  padding: 12px 30px;
+  box-shadow: 2px 2px 13px 0px rgba(50, 50, 50, 0.5);
+}
+
+.optionsWrap {
+  display: flex;
+  gap: 10px;
+  margin: 20px auto;
+}
+
+label {
+  display: block;
+}
+
+.blur {
+  opacity: 0.5;
+  filter: blur(5px);
+}
+@media screen and (max-width: 768px) {
+  .start {
+    margin-bottom: 40px;
+  }
+
+  img {
+    max-width: 150px;
+  }
+}

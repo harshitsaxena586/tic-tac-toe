@@ -1,0 +1,47 @@
+.start {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.start h1 {
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.start input {
+  font-family: "Nunito", sans-serif;
+  background-color: transparent;
+  color: #3b7df8;
+  font-size: 1.2rem;
+  font-weight: 500;
+  outline: none;
+  outline-style: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid #3b7df8 1.5px;
+  padding: 3px 10px;
+  margin-bottom: 1.5rem;
+}
+
+.continue {
+  font-weight: 500;
+  color: rgb(37, 37, 37);
+  margin: 5px auto;
+  font-size: 2.5rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #fff;
+  display: block;
+  font-size: 1rem;
+  padding: 12px 30px;
+  box-shadow: 2px 2px 13px 0px rgba(50, 50, 50, 0.5);
+}
+@media screen and (max-width: 768px) {
+  .start {
+    margin-bottom: 40px;
+  }
+}
